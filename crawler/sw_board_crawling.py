@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 import os
 
 #파일의 위치
-#BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = '/Users/jaeho/develop/soongsil-swbot'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 html = requests.get('http://sw.ssu.ac.kr/bbs/board.php?bo_table=sub6_1')
 soup = BeautifulSoup(html.text, 'html.parser')
